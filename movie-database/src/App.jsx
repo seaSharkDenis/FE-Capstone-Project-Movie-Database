@@ -1,11 +1,12 @@
 import './App.css'
+import MovieCard from './components/MovieCard'
 import SearchBar from './components/SearchBar'
-import HomePage from './components/SearchBar'
 
 function App() {
   return (
     <>
-      <SearchBar />
+      {/* <SearchBar /> */}
+      <MovieCard />
     </>
   )
 }
