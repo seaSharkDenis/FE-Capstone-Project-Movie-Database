@@ -4,7 +4,7 @@ function MovieCard({ movie, onSelect }) {
   return (
     <div
       onClick={() => onSelect(movie.imdbID)}
-      className="cursor-pointer bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+      className="cursor-pointer bg-gray-400 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       <div className="h-48 overflow-hidden">
         {movie.Poster !== "N/A" ? (
           <img
@@ -13,7 +13,7 @@ function MovieCard({ movie, onSelect }) {
             className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+          <div className="w-full h-full bg-gray-100 flex items-center justify-center">
             <span className="text-gray-500">No poster available</span>
           </div>
         )}
